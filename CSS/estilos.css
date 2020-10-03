@@ -1,0 +1,137 @@
+body{
+   margin: 0;
+   font-family: sans-serif;
+
+  }
+.contenedor {
+   max-width: 1280px;
+   width: 90%;
+   margin: auto;
+}
+/*menu*/
+header #navegador ul{
+   list-style-type: none;
+   text-align: right;
+ }
+header #navegador li{
+   display: inline;
+   text-align: center;
+   margin: 0 5px 0 0;
+}
+header #navegador li a {
+   padding: 2px 7px 2px 7px;
+   color:white;
+   border: 1px solid #ccc;
+   text-decoration: none;
+}
+header #navegador li a:hover{
+   background-color: #053903;
+   color: #ffffff;
+}
+
+header {
+   background: linear-gradient(rgba(84, 93, 220, 0.5), rgba(96, 131, 245, 0.5)), url(../IMG/hojas1.jpeg);
+   height: 40vh;
+   background-size:cover;
+  }
+  /*info*/
+.derechos{
+   display: flex;
+   justify-content: space-around;
+}
+.derechos .texto{
+  width: 42%;
+  }
+h1{
+	text-align: center;
+  font-family: fantasy;
+  font-size: 4em;
+  color:#053903;
+}
+#mas{
+	text-align: center;
+}
+.contenedor-derechos {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+
+}
+h2{
+  text-align: center;
+  font-family: fantasy;
+  font-size: 2em;
+  color:#053903;
+}
+/*reloj*/
+.clock{
+    background-color:#333;
+    font-family: sans-serif;
+    font-size:60px;
+    text-shadow:0px 0px 1px #fff;
+    color:#888;
+    text-shadow:0px 0px 1px #333;
+    font-size:30px;
+    position:relative;
+    top:-3px;
+    left:1px;
+}
+
+}
+.date {
+    letter-spacing:10px;
+    font-size:14px;
+    font-family:arial,sans-serif;
+    color:#fff;
+}
+/*FORMULARIO*/
+
+#formulario form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 77%;
+  margin:auto;
+}
+input[type="text"] {
+width: 49%;
+margin-bottom: 15px;
+padding: 18px 0;
+border: 0;
+border-bottom: 1px solid #053903;
+font-size: 17px;
+}
+textarea{
+padding: 18px 0;
+border: 1px solid #053903;
+width: 100%;
+}
+input[type="file"],[type="submit"],[type="reset"] {
+font-family:arial,sans-serif;
+
+}
+
+/*pie de página*/
+footer{
+  background: #2F2F2F;
+  padding: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+footer .contenedor{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+footer img{
+  margin: 0 40px;
+  transform: rotate(0);
+  transition:0.4s;
+}
+footer img:hover{
+  transform: rotate(360deg);
+}
+footer p{
+  color: #fff;
+  margin-top: 40px;
+}

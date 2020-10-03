@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo</title>
+    <link rel="stylesheet" type="text/css" href="CSS/carrito.css">
+    
+</head>
+<body>
+   <header>
+    <div class="contenedor"> 
+      <div id="navegador">
+        <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html">Conoce más</a></li>
+        <li><a href="carrito.html">Catálogo</a></li>
+        <li><a href="#contact">Contacto</a></li>
+       </ul>
+      </div>
+  </div>
+     </header>
+     <div class="contenedor">
+        <h1>CATÁLOGO</h1>
+        
+        <div class="productos">
+            <!-- Elementos generados a partir del JSON -->
+          
+            <main id="productos"></main>
+            <!-- Carrito -->
+             <div id="carr">
+                <h2>Carrito <img src="IMG/carrito.png" alt="carrito" width="20px"></h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p>Total: $<span id="total"></span> pesos</p>
+                <button id="boton-vaciar">Vaciar carrito</button>
+           </div>
+        </div>
+    </div>
+      <footer>
+    <div class="contenedor">
+      <div class="redes" id="contact">
+        <a target="_blank" href="https://www.facebook.com/"><img src="IMG/facebook.png" width="30px"></a>
+        <a target="_blank" href="https://twitter.com/"><img src="IMG/twitter.png" width="30px"></a>
+        <a target="_blank" href="https://www.youtube.com/"><img src="IMG/youtube.png" width="30px"></a>
+        <a target="_blank" href="https://www.instagram.com/"><img src="IMG/instagram.png" width="30px"></a> 
+      </div>
+      
+        <p>Contacto Tel. 5555555 | Correo: info@mail.com </p>
+    
+    </div>
+  </footer>
+    <script src="JS/carrito.js"></script>
+</body>
+</html>

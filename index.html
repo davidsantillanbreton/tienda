@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html leng="esp">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+	<title>Terrarios Bety</title>
+</head>
+<body onload="udateTime()">
+  <header>	
+    <!--menu-->
+	<div class="contenedor">
+	 <div id="navegador">
+	 <ul>
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="#que_son">Conoce más</a></li>
+		<li><a href="carrito.html">Catálogo</a></li>
+    <li><a href="#formulario">Formulario</a></li>
+		<li><a href="#contact">Contacto</a></li>
+	 </ul>
+	 </div>
+	</div> 
+  </header>
+  <section id="reloj">
+  <!--reloj inicia al cargar la página-->
+<div class="clock">
+    <span id="hours" class="hours"></span> :
+    <span id="minutes" class="minutes"></span> :
+    <span id="seconds" class="seconds"></span>
+</div>
+    <div class="date">
+    <span id="weekDay" class="weekDay"></span>, 
+    <span id="day" class="day"></span> de
+    <span id="month" class="month"></span> del
+    <span id="year" class="year"></span>
+</div>
+</section>
+<section id="info">
+   <div class="contenedor">
+
+  <!--info--> 	
+	<h1>Tienda en línea "Terrarios Bety"</h1>
+    <hr>
+   <div class="derechos">
+	 <div class="img">
+	  <img src="IMG/hojas.jpeg" alt="hojas" width="500px">
+	 </div>
+	<div class="texto">
+	<h2 id="que_son">¿Qué son?</h2>
+      <p>“Tal vez viste alguna vez una planta pequeña dentro de un frasco y te pareció bonita, pero no sabes qué es un terrario y cómo hacer un terrario tú mismo para tener bonitas plantas que requieren pocos cuidados en tu hogar.</p>
+      <p><strong>UN TERRARIO ES UN PEQUEÑO JARDÍN QUE SE CULTIVA DENTRO DE UN RECIPIENTE.</strong> Son ideales para tener dentro del hogar. Las condiciones generadas en este invernadero de miniatura hacen que las plantas no requieran demasiado mantenimiento.</p> 
+<p>
+Escoge el contenedor que más te guste, añadiéndole belleza y naturaleza a las habitaciones de tu casa.“ </p> 
+     </div>
+    </div>
+     <hr>
+     </section>
+
+   <!--formulario-->  
+     <section id="formulario">
+       <div class="contenedor">
+         <h2>Agregar producto</h2>
+
+<p>A través de este formulario puedes agregar productos para su publicación a la venta</p>
+    <form name="formulario" method="GET" action="http://davidsantillanbreton.github.io/Creando-un-punto-de-venta-en-internet/" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Agregar producto</legend>
+        <label>
+        <input class="datos" type="text" placeholder="PRODUCTO" minlength="3" maxlength="20" required>
+        </label>
+        <br>
+        <label>
+        <input class="datos" type="text" placeholder="0.00" minlength="1" maxlength="6" required pattern="[0-9]+">
+        </label>
+        <br>
+        <br>
+        <textarea class="datos" name="caract" cols="80" rows="10" placeholder="Escribe aquí el texto...">
+         Características del producto, peso, etc.
+        </textarea>
+        <br>
+        <p>Agregar imagen (opcional) <input type="file" name="adjunto" accept=".jpg,.png,.jpeg,.bmp"/></p>
+       </fieldset>  
+        <button id="button" type="submit" onclick="Capturar()" >Agregar producto</button>
+         <input type="reset" value="Borrar todo" />
+        <div id="message"></div>
+          </form>
+
+
+       </div>
+     </section>
+     
+  </div>
+  <!-- pie de página-->
+  <footer>
+  	<div class="contenedor">
+  	  <div class="redes" id="contact">
+  	    <a target="_blank" href="https://www.facebook.com/"><img src="IMG/facebook.png" width="30px"></a>
+        <a target="_blank" href="https://twitter.com/"><img src="IMG/twitter.png" width="30px"></a>
+        <a target="_blank" href="https://www.youtube.com/"><img src="IMG/youtube.png" width="30px"></a>
+        <a target="_blank" href="https://www.instagram.com/"><img src="IMG/instagram.png" width="30px"></a>	
+      </div>
+      
+        <p>Contacto Tel. 5555555 | Correo: info@mail.com </p>
+    
+    </div>
+  </footer>
+
+  <script src="JS/myScript.js"></script>
+</body>
+</html>
